@@ -7,7 +7,7 @@ data.each_with_object({}) do |(key, value), final_array|
       if !final_array[pigeon_name]
         final_array[pigeon_name] = {}
       end
-      if !final_array[pigeon_name] = {}
+      if !final_array[pigeon_name][key] = {}
 end
   end
   final_array
