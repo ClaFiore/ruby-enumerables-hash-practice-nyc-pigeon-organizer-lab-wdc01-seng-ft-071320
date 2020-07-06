@@ -7,10 +7,12 @@ data.each_with_object({}) do |(key, value), final_array|
       if !final_array[pigeon_name]
         final_array[pigeon_name] = {}
       end
-      if !final_array[pigeon_name][key] = {}
-end
-  end
+      if !final_array[pigeon_name][key]
+        final_array[pigeon_name][key] = []
+      end
+      final_array[pigeon_name][key].push
+    end
   final_array
-end
+  end
 binding.pry
 end
